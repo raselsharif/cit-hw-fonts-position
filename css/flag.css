@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttonArea {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+    background: transparent;
+    position: relative;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: red;
+
+}
+
+.btn:hover {
+    border-color: red;
+}
+
+.btn a:hover {
+    color: #ff0505;
+
+}
+
+.btn::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: green;
+    transition: all linear 0.2s;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ========= argenrina button ====== */
+.btnAr {
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+    background: transparent;
+    position: relative;
+    border: 2px solid #6BADE4;
+    border-radius: 10px;
+    color: red;
+
+}
+
+.btnAr:hover {
+    border-color: #6BADE4;
+}
+
+.btnAr a:hover {
+    color: #fff;
+
+}
+
+.btnAr::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #6BADE4;
+    transition: all linear 0.2s;
+    z-index: -1;
+}
+
+.btnAr:hover::before {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.btnAr a {
+    text-decoration: none;
+    color: #6BADE4;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =========== Bangladesh Flag ========== */
+.flagArea {
+    height: 600px;
+
+}
+
+.bdFlag {
+    height: 300px;
+    width: 500px;
+    background: green;
+    position: relative;
+    margin: 50px auto;
+    display: block;
+    transition: all linear 0.3s;
+}
+
+.bdFlag:hover {
+    background: rgb(107, 224, 107);
+}
+
+.redCircle {
+    height: 150px;
+    width: 150px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stand {
+    height: 600px;
+    width: 20px;
+    background-image: radial-gradient(red, green);
+    position: absolute;
+    border-radius: 20px 20px 0px 0px;
+    top: -10px;
+}
+
+/* ============= Argentina Flag ========== */
+.arFlagArea {
+    height: 600px;
+
+}
+
+.arFlag {
+    display: block;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    background: #6BADE4;
+    margin: 0 auto;
+}
+
+.midColor {
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.midImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arStand {
+    height: 600px;
+    width: 20px;
+    background-image: radial-gradient(#fff, #6BADE4);
+    position: absolute;
+    border-radius: 20px 20px 0px 0px;
+    top: -10px;
+    right: 0;
+}
+
+/* ======= Brazil Flag ======== */
+.brFlagArea {
+    height: 600px;
+
+}
+
+.brFlag {
+    height: 300px;
+    width: 500px;
+    background: #118C46;
+    position: relative;
+    margin: 0 auto;
+}
+
+.midBrColor {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    background: #E0D827;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.midImageBr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.brStand {
+    height: 600px;
+    width: 20px;
+    background-image: repeating-radial-gradient(#E0D827 10%, #118C46 30%);
+    position: absolute;
+    border-radius: 20px 20px 0px 0px;
+    top: -10px;
+    left: 0;
+}
+
+/* =============== Syria Flag =============== */
+.srFlagArea {
+    height: 600px;
+}
+
+.srFlagOne {
+    background: #fff;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+.srFlagTwo {
+    background: #ce1126;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+}
+
+.srFlagThree {
+    background: #000;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.srFlagImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.srStand{
+    position: absolute;
+    height: 600px;
+    width: 20px;
+    background-image: linear-gradient(green,black,red);
+    right: 0;
+    top: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* ======== Aurtralia Flag ============ */
+.ausFlagArea{
+    height: 600px;
+}
+.ausFlagBG{
+height: 300px;
+width: 500px;
+position: relative;
+background: #000068;
+margin: 0 auto;
+}
+.stripArea{
+position: absolute;
+height: 150px;
+width: 250px;
+}
+.ausFlagStripOne{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 113px;
+    background: red;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    z-index: 1;
+}
+.ausFlagStripSeven{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 113px;
+    background: red;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    z-index: 1;
+}
+.ausFlagStripTwo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 40px;
+    background: red;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+
+}
+.ausFlagStripThree{
+position: absolute;
+height: 120px;
+width: 30px;
+top: -25px;
+left: 35px;
+border-right: 15px solid white;
+border-left: 5px solid white;
+background: red;
+transform: rotate(-60deg);
+border-radius: 20px 14px 0px 0px;
+}
+.ausFlagStripFour{
+    position: absolute;
+    height: 120px;
+    width: 30px;
+    bottom: -25px;
+    right: 35px;
+    border-right: 5px solid white;
+    border-left: 15px solid white;
+    background: red;
+    transform: rotate(-60deg);
+    border-radius: 0px 0px 30px 20px ;
+}
+.ausFlagStripFive{
+    position: absolute;
+    height: 120px;
+    width: 30px;
+    top: -25px;
+    right: 35px;
+    border-right: 15px solid white;
+    border-left: 5px solid white;
+    background: red;
+    transform: rotate(60deg);
+    border-radius:  20px 30px 0px 0px ;
+}
+.ausFlagStripSix{
+    position: absolute;
+    height: 120px;
+    width: 30px;
+    bottom: -25px;
+    left: 35px;
+    border-right: 5px solid white;
+    border-left: 15px solid white;
+    background: red;
+    transform: rotate(60deg);
+    border-radius:  0px 0px 30px 30px  ;
+}
+.starOne{
+position: absolute;
+bottom: 15%;
+left: 17%;
+}
+.starTwo{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+.starThree{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+.starFour{
+    position: absolute;
+    top: 40%;
+    right: 35%;
+}
+.starFive{
+    position: absolute;
+    top: 55%;
+    right: 20%;
+}
+.starSix{
+    position: absolute;
+    bottom: 10%;
+    right: 23%;
+}
+
+.ausStand{
+    position: absolute;
+    height: 600px;
+    width: 20px;
+    background-image: linear-gradient(red,#000068);
+    left: -4px;
+    top: -10px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 2;
+}
